@@ -13,7 +13,7 @@
             
             List<string> tokens = Program.tokenize(equation);
             List<string> postfix = Program.ToPostfix(tokens);
-            float result = Program.Calculating(postfix);
+            string result = Program.Calculating(postfix);
             
             Console.WriteLine($"< {result}");
         }

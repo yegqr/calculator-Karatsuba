@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("fucking calculator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+27719d70ee7ef5116cf520395f095573a451b780")]
 [assembly: System.Reflection.AssemblyProductAttribute("fucking calculator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("fucking calculator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

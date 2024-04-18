@@ -12,3 +12,4 @@ C:\Users\iskos\RiderProjects\fucking calculator\fucking calculator\obj\Debug\net
 C:\Users\iskos\RiderProjects\fucking calculator\fucking calculator\obj\Debug\net7.0\fucking calculator.pdb
 C:\Users\iskos\RiderProjects\fucking calculator\fucking calculator\obj\Debug\net7.0\fucking calculator.genruntimeconfig.cache
 C:\Users\iskos\RiderProjects\fucking calculator\fucking calculator\obj\Debug\net7.0\ref\fucking calculator.dll
+C:\Users\iskos\RiderProjects\fucking calculator\fucking calculator\obj\Debug\net7.0\fucking calculator.sourcelink.json

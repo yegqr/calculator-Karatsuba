@@ -4,7 +4,7 @@
     {
         var dict = new Dictionary<string, int>()
         {
-            { "+", 0 }, { "-", 0 }, { "/", 1 }, { "*", 1 }, { "^", 2 } , {"(" , -1}
+            { "+", 0 }, { "-", 0 }, { "*", 1 }, { "^", 2 } , {"(" , -1}
         };
         return dict[symbol];
     }
@@ -12,7 +12,7 @@
     public static List<string> tokenize(string input)
     {
         var tokenized = new List<string>();
-        var typesOperations = new List<string>() { "+", "-", "/", "*", "(", ")", "^" };
+        var typesOperations = new List<string>() { "+", "-", "*", "(", ")", "^" };
         var previousDigit = true;
         var   temporary = new List<string>();
 
@@ -105,15 +105,15 @@
         return output;
     }
     
-    public static float Calculating(List<string> Postfix)
+    public static string Calculating(List<string> Postfix)
     {
-        var final = new Stack<float>();
+        var final = new Stack<BigInteger>();
 
         foreach (var element in Postfix)
         {
             if (float.TryParse(element, out float res))
             {
-                final.Push(res);
+                final.Push(new BigInteger($"{res}"));
             }
             else
             {
@@ -132,14 +132,10 @@
                 {
                     final.Push(num2 * num1);
                 }
-                else if (element == "/")
-                {
-                    final.Push(num2 / num1);
-                }
                 else if (element == "^")
                 {
-                    float box = 1;
-                    for (int i = 0; i < num1; i++)
+                    var box = new BigInteger("1");
+                    for (int i = 0; i < int.Parse(num1.ToString()); i++)
                     {
                         box *= num2;
                     }
@@ -147,6 +143,6 @@
                 }
             }
         }
-        return final.Pop();
+        return final.Pop().ToString();
     }
 }
